@@ -1,0 +1,60 @@
+@keyframes logo {
+  to {
+    width: 20%;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+}
+
+@keyframes greeting {
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: black;
+  background-image: url(../images/home/NecrodancerBanner.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+}
+
+.logo {
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 90%;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.greeting {
+  opacity: 0;
+  width: 33%;
+  margin-left: 33%;
+  margin-top: 12%;
+  animation-name: greeting;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.categories {
+  display: block;
+  margin-top: 12%;
+}
+
+.categ {
+  margin-left: 5%;
+}
+
+.categ img {
+  display: inline-block;
+  min-width: 300px;
+  width: 18%;
+  border: 3px white solid;
+  border-radius: 20px;
+}
