@@ -1,0 +1,76 @@
+.characterInfo {
+  display: block;
+  color: white;
+  font-family: cursive;
+  font-size: 40px;
+}
+
+#equipment {
+  display: block;
+}
+
+.itemgrid {
+  margin-top: 20px;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.itemgrid:nth-child(1) {
+  background-image: url(../../images/hud/shovelgrid.webp);
+}
+
+.itemgrid:nth-child(2) {
+  background-image: url(../../images/hud/attackgrid.webp);
+}
+
+.itemgrid:nth-child(3) {
+  background-image: url(../../images/hud/bodygrid.webp);
+}
+
+.itemgrid:nth-child(4) {
+  background-image: url(../../images/hud/feetgrid.webp);
+}
+
+.itemgrid:nth-child(5) {
+  background-image: url(../../images/hud/ringgrid.webp);
+}
+
+.item {
+  margin-right: 10px;
+  width: 80px;
+}
+
+#hearts {
+  margin-top: 30px;
+  display: block;
+}
+
+.heart {
+  width: 80px;
+}
+
+#name {
+  display: inline-block;
+  font-family: cursive;
+  font-size: 60px;
+  color: white;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 0;
+  width: 30%;
+  font-family: Georgia, Times New Roman, Times, serif;
+  text-transform: uppercase;
+}
+
+#charDetails {
+  margin-left: 40%;
+  margin-right: 5%;
+  position: absolute;
+  display: flex-box;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
