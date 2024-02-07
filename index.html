@@ -190,7 +190,7 @@ function CharChange(selectedChar) {
 
   //Image
   document.getElementById("characterImg").src =
-    "../images/characters/" + characters[selectedChar] + ".webp";
+    "./images/characters/" + characters[selectedChar] + ".webp";
   //Name
   document.getElementById("name").innerHTML = characters[selectedChar];
 
@@ -199,13 +199,13 @@ function CharChange(selectedChar) {
 
   if (characterInfo[characters[selectedChar]].health == 0.5) {
     let charHealth = document.createElement("img");
-    charHealth.src = "../images/hud/halfheart.webp";
+    charHealth.src = "./images/hud/halfheart.webp";
     charHealth.className = "heart";
     document.getElementById("hearts").appendChild(charHealth);
   } else {
     for (let i = 0; i < characterInfo[characters[selectedChar]].health; i++) {
       let charHealth = document.createElement("img");
-      charHealth.src = "../images/hud/heart.webp";
+      charHealth.src = "./images/hud/heart.webp";
       charHealth.className = "heart";
       document.getElementById("hearts").appendChild(charHealth);
     }
