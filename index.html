@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/characters/details.css">
+    <link rel="stylesheet" href="./styles/characters/ui.css">
+    <title>Characters</title>
 </head>
-
 <body>
-    <img src="./images/home/NecrodancerLogo.webp" alt="NecrodancerLogo" class="logo">
-    <img src="./images/home/Greeting.webp" alt="GreetingText" class="greeting">
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Characters</a>
+        <a href="#">Enemies</a>
+        <a href="#">Bosses</a>
+        <a href="#">Items</a>
+        <a href="#">Shrines</a>
+        <a href="#">Traps</a>
+        <a href="#">Shops</a>
+        <a href="#">Songs</a>
+    </header>
 
-    <div class="categories">
-        <a href="characters.html" class="categ">
-            <img src="./images/home/enemies.webp" alt="Characters">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Enemies">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Bosses">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Items">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Shrines">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Traps">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Shops">
-        </a>
-        <a href="#" class="categ">
-            <img src="./images/home/enemies.webp" alt="Bosses">
-        </a>
+    <button id="left" onclick="leftClick()"></button>
+
+    <div id="charImage">
+        <img src="./images/characters/Cadence.webp" id="characterImg">
     </div>
-</body>
 
+    <div id="charDetails">
+        <h2 id="name">Cadence</h2>
+        <div id="allchars">
+            <div id="firsthalf">
+                <img src="./images/charheads/cadence.webp" id="Cadencehead" class="charhead selectedhead" onclick="CharChange(0)">
+                <img src="./images/charheads/melody.webp" id="Melodyhead" class="charhead" onclick="CharChange(1)">
+                <img src="./images/charheads/aria.webp" id="Ariahead" class="charhead" onclick="CharChange(2)">
+                <img src="./images/charheads/dorian.webp" id="Dorianhead" class="charhead" onclick="CharChange(3)">
+                <img src="./images/charheads/eli.webp" id="Elihead" class="charhead" onclick="CharChange(4)">
+            </div>
+            <div id="secondhalf">
+                <img src="./images/charheads/monk.webp" id="Monkhead" class="charhead" onclick="CharChange(5)">
+                <img src="./images/charheads/dove.webp" id="Dovehead" class="charhead" onclick="CharChange(6)">
+                <img src="./images/charheads/bolt.webp" id="Bolthead" class="charhead" onclick="CharChange(7)">
+                <img src="./images/charheads/bard.webp" id="Bardhead" class="charhead" onclick="CharChange(8)">
+                <img src="./images/charheads/coda.webp" id="Codahead" class="charhead" onclick="CharChange(9)">
+            </div>
+        </div>
+        <hr/>
+        <div id="equipment">
+            <div class="itemgrid"><img src="" id="item"></div>
+            <div class="itemgrid"><img src="" id="item"></div>
+            <div class="itemgrid"><img src="" id="item"></div>
+            <div class="itemgrid"><img src="" id="item"></div>
+            <div class="itemgrid"><img src="" id="item"></div>
+            <div class="itemgrid"><img src="" id="item"></div>
+        </div>
+        <div id="hearts">
+            <img src="./images/hud/heart.webp" class="heart">
+            <img src="./images/hud/heart.webp" class="heart">
+            <img src="./images/hud/heart.webp" class="heart">
+        </div>
+        <p class="characterInfo">Shovel</p>
+        <p class="characterInfo">Dagger</p>
+        <p class="characterInfo">Body</p>
+        <p class="characterInfo">Feet</p>
+        <p class="characterInfo">Ring</p>
+    </div>
+
+    <button id="right" onclick="rightClick()"></button>
+
+    <script src="./js/characters.js"></script>
+</body>
 </html>
