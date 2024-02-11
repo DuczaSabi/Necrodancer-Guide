@@ -10,8 +10,10 @@
 }
 
 .itemgrid {
+    display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  display: inline-block;
   width: 110px;
   height: 110px;
   background-repeat: no-repeat;
@@ -39,8 +41,9 @@
 }
 
 .item {
-  margin-right: 10px;
-  width: 80px;
+  margin-top: 10px;
+  margin-right: 7px;
+  width: 70px;
 }
 
 #hearts {
