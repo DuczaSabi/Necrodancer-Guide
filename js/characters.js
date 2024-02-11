@@ -151,12 +151,12 @@ const characters = [
       shovel.src = "./images/items/shovel-" + charInfo.shovel + ".webp";
 
       charInfo.attack !== "none" ? attack.style.display = "block" : attack.style.display = "none";
-      attack.src = "./images/items/attack-" + charInfo.attack + ".webp";
-
-      charInfo.body !== "none" ? body.style.display = "block" : "none";
       body.src = charInfo.body !== "none" ? "./images/items/body-" + charInfo.body + ".webp" : "";
 
-      charInfo.feet !== "none" ? feet.style.display = "block" : "none";
+      charInfo.body !== "none" ? body.style.display = "block" : attack.style.display = "none";
+      body.src = charInfo.body !== "none" ? "./images/items/body-" + charInfo.body + ".webp" : "";
+
+      charInfo.feet !== "none" ? feet.style.display = "block" : attack.style.display = "none";
       feet.src = charInfo.feet !== "none" ? "./images/items/feet-" + charInfo.feet + ".webp" : "";
       
       //Shovel

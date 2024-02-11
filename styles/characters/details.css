@@ -44,6 +44,7 @@
   margin-top: 10px;
   margin-right: 7px;
   width: 70px;
+  object-fit: contain;
 }
 
 #hearts {
